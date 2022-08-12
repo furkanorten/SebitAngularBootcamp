@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Distance (m)</label>
+        <input type="text" class="form-control" (input)="OnDistanceChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Distance</b></label>
+      <div>
+        {{distance | distance: 'km'}}
+      </div>
+    </div>
+  </div>
+</div>
