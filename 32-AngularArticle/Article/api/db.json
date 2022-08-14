@@ -1,0 +1,50 @@
+{
+  "articles": [
+    {
+      "author": "furkan",
+      "title": "yazı başlığı",
+      "content": "yazı",
+      "comments": [
+        {
+          "username": "burak",
+          "comment": "ilk yorum"
+        },
+        {
+          "username": "a",
+          "comment": "a"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "author": "burak",
+      "title": "güzel başlık",
+      "content": "jdsaghkafdhhafdgdjfgadhfkjdafkjhfdaghhfdkajfda",
+      "comments": [],
+      "id": 2
+    },
+    {
+      "author": "asghjhas",
+      "title": "kgjhlasksalas",
+      "content": "sakdgajhssakdgajhssakdgajhssakdgajhssakdgajhs",
+      "comments": [],
+      "id": 3
+    },
+    {
+      "author": "SAHFGSAJHKSAJA",
+      "title": "ghkdsajaksjkaj",
+      "content": "<div><span>SAJHGKSAJKSALASSAJHGKSAJKSALASSAJHGKSAJKSALASSAJHGKSAJKSALAS</span></div>",
+      "comments": [
+        {
+          "username": "AAA",
+          "comment": "SADJHGAKSJKDSA"
+        },
+        {
+          "username": "SADDA",
+          "comment": "DSAASDADS"
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
