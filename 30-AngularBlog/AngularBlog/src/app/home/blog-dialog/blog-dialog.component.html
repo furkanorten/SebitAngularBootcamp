@@ -5,7 +5,7 @@
   <button mat-button fs-4 (click)="close()">X</button>
 </div>
 
-<form [formGroup]="form" *ngIf="isUpdate">
+<form [formGroup]="form" *ngIf="isUpdate" style="min-width:500px">
   <div class="container">
     <div class="row">
       <mat-form-field>
@@ -31,4 +31,25 @@
     <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="onSubmit()">Güncelle</button>
   </div>
 </form>
+
+<div *ngIf="!isUpdate" class="container">
+  <div class="row mb-2">
+    <div class="col-lg-6">
+      <img class="w-100" src="assets/images/image{{imageUrl}}.jpg">
+    </div>
+    <div class="col-lg-6">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+    </div>
+  </div>
+  <div class="row" style="background-color:lightgray; padding:20px; margin-bottom: 20px;" *ngFor="let comment of commentData">
+    <div class="col-lg-2">
+      <img class= "w-50 rounded-circle" src="assets/images/profile/profile{{comment.userId}}.jpg">
+    </div>
+    <div class="col-lg-10">
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.body}}</p>
+    </div>
+  </div>
+</div>
 
